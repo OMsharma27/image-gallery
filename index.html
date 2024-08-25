@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="gallery-container">
+        <div class="gallery">
+            <img id="current-image" src="current image.png" alt="Gallery Image">
+        </div>
+        <div class="controls">
+            <button id="prev" onclick="prevImage()">&#10094; Previous</button>
+            <button id="next" onclick="nextImage()">Next &#10095;</button>
+        </div>
+        <div class="thumbnails">
+            <img src="image1.jpg" onclick="showImage(0)">
+            <img src="image2.jpg" onclick="showImage(1)">
+            <img src="image3.jpg" onclick="showImage(2)">
+            <img src="image4.jpg" onclick="showImage(3)">
+            <img src="image5.jpg" onclick="showImage(4)">
+        </div>
+    </div>
+    <script src="second.js"></script>
+</body>
+</html>
